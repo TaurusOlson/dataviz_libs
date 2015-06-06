@@ -2,7 +2,7 @@
 
 Ce repository contient les IPython notebooks utilisés lors de la présentation
 sur les alternatives à matplotlib, qui a eu lieu à l'[IRAP][irap] le 5 juin 2015 dans
-le cadre des rencontres Python kt'afé.
+le cadre des rencontres Python ktafé.
 
 La présentation aborde des librairies de visualisation de données qui
 pourraient être utiles aux chercheurs en fonction de leur besoin:
@@ -25,8 +25,27 @@ pourraient être utiles aux chercheurs en fonction de leur besoin:
         conda update ipython ipython-notebook ipython-qtconsole pandas
         conda install seaborn bokeh
 
-
 **NOTE**: ggplot n'est pas disponible depuis conda. 
+
+
+## Notes diverses
+
+* La commande:
+
+        %matplotlib inline
+
+permet d'afficher les plots dans le notebook.
+
+* L'extension de IPython, [watermark][watermark] permet d'afficher les versions des modules utilisés.
+
+        # Installation
+        %install_ext https://raw.githubusercontent.com/rasbt/watermark/master/watermark.py
+
+        # Chargement
+        %load_ext watermark
+
+        # Exécution
+        %watermark -v -p bokeh,seaborn,matplotlib,pandas,numpy,scipy,ggplot
 
 
 [anaconda]: https://store.continuum.io/cshop/anaconda/
@@ -35,3 +54,4 @@ pourraient être utiles aux chercheurs en fonction de leur besoin:
 [ggplot]: http://ggplot.yhathq.com/
 [bokeh]: http://bokeh.pydata.org/en/latest/
 [irap]: http://www.irap.omp.eu/
+[watermark]: https://github.com/rasbt/watermark
