@@ -28,6 +28,18 @@ pourraient être utiles aux chercheurs en fonction de leur besoin:
 **NOTE**: ggplot n'est pas disponible depuis conda. 
 
 
+## Lancement de l'application avec bokeh-server
+
+`bokeh` permet d'interagir avec des données grâce à une application `Flask`[flask]. La communication entre l'application et les données se fait avec l'exécutable `bokeh-server`:
+
+        cd mtcars_app
+        bokeh-server --script app.py
+
+Ouvrez alors votre navigateur à l'adresse URL:
+
+        http://localhost:5006/bokeh/mtcars
+
+
 ## Notes diverses
 
 * La commande:
@@ -48,6 +60,7 @@ permet d'afficher les plots dans le notebook.
         %watermark -v -p bokeh,seaborn,matplotlib,pandas,numpy,scipy,ggplot
 
 
+
 [anaconda]: https://store.continuum.io/cshop/anaconda/
 [pip]: https://pip.pypa.io/en/stable/
 [seaborn]: http://stanford.edu/~mwaskom/software/seaborn/
@@ -55,3 +68,4 @@ permet d'afficher les plots dans le notebook.
 [bokeh]: http://bokeh.pydata.org/en/latest/
 [irap]: http://www.irap.omp.eu/
 [watermark]: https://github.com/rasbt/watermark
+[flask]: http://flask.pocoo.org/
