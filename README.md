@@ -16,15 +16,14 @@ pourraient être utiles aux chercheurs en fonction de leur besoin:
 
 * Avec [pip][pip]:
 
-    pip install 'ipython[notebook]'
-    pip install seaborn ggplot bokeh
+        pip install -r requirements.txt
 
 
 * Avec [anaconda][anaconda]:
 
-    conda update conda
-    conda update ipython ipython-notebook ipython-qtconsole
-    conda install seaborn bokeh
+        conda update conda
+        conda update ipython ipython-notebook ipython-qtconsole pandas
+        conda install seaborn bokeh
 
 
 **NOTE**: ggplot n'est pas disponible depuis conda. 
