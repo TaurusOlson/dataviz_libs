@@ -28,9 +28,22 @@ pourraient être utiles aux chercheurs en fonction de leur besoin:
 **NOTE**: ggplot n'est pas disponible depuis conda. 
 
 
+## Lancement de IPython notebook
+
+Dans la console, tapez:
+
+        ipython notebook
+
+Ouvrez alors votre navigateur à l'adresse URL:
+
+        http://localhost:8888
+
+
 ## Lancement de l'application avec bokeh-server
 
-`bokeh` permet d'interagir avec des données grâce à une application `Flask`[flask]. La communication entre l'application et les données se fait avec l'exécutable `bokeh-server`:
+`bokeh` permet d'interagir avec des données grâce à une application
+`Flask`[flask]. La communication entre l'application et les données se fait
+avec l'exécutable `bokeh-server`:
 
         cd mtcars_app
         bokeh-server --script app.py
@@ -48,7 +61,8 @@ Ouvrez alors votre navigateur à l'adresse URL:
 
 permet d'afficher les plots dans le notebook.
 
-* L'extension de IPython, [watermark][watermark] permet d'afficher les versions des modules utilisés.
+* L'extension de IPython, [watermark][watermark] permet d'afficher les versions
+  des modules utilisés.
 
         # Installation
         %install_ext https://raw.githubusercontent.com/rasbt/watermark/master/watermark.py
